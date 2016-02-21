@@ -1,0 +1,4 @@
+go to the folder where isofile is placed using cd 
+now
+
+dd if= FILE-NAME.ISO of=/dev/DEVICE-ID bs=1MB && sync
