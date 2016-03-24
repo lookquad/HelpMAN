@@ -1,0 +1,13 @@
+$(document).ready(function () {
+	$.ajax({
+		  type: 'POST',
+		  url: 'ServletName',
+		  dataType: 'json',
+		  success: function(jsonData) {
+		    alert(jsonData);
+		  },
+		  error: function() {
+		    alert('Error loading data');
+		  }
+		});
+});
