@@ -1,0 +1,19 @@
+ Create a windows 7 bootable pendrive on fedora/RedHat/CentOS
+Insert the usb drive.
+Unmount it.
+Now open the terminal and run the following command-
+
+(Considering your pendrive id is : sdb)
+$fdisk /dev/sdb
+$parted /dev/sdb
+
+$mkfs.ntfs -f /dev/sdb1
+
+$mkdir -p /mnt/usb
+$mount /dev/sdb /mnt/usb
+$mkdir -p /mnt/iso
+$mount -o loop /home/file.iso /mnt/iso
+$cp -av /mnt/iso/* /mnt/usb/
+$sync
+
+$umount /mnt/sdb
