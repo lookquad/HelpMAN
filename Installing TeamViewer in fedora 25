@@ -1,0 +1,15 @@
+
+Installing TeamViewer in fedora 25.
+For installing TeamViewer in fedora 25 u can follow these steps.
+
+https://www.teamviewer.com/en/download/linux/
+Download the rpm package and double click on it. Now install it. 
+
+you may get an error saying "error getting online" or "Not ready, Please check your connection".
+The reason that TeamViewer is not working properly on Fedora 25 is because Fedora is using by default Wayland instead of Xorg. And TeamViewer is not compatible with it for now.
+To make TeamViewer running and work properly under Fedora 25, please disable Wayland support by running the following instructions:
+- Open the file /etc/gdm/custom.conf
+- Uncomment the line 'WaylandEnable=false'
+- Save and reboot the system.
+
+You can also choose at the time of login whether gnome or Xorg is to be used.
