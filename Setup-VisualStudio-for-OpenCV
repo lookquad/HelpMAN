@@ -1,0 +1,5 @@
+Install Visual Studio Community edition
+Then you need to install vspkg
+https://github.com/microsoft/vcpkg
+
+this will allow you to install each and every dependenies or required C++ libaries in your computer and will automatically make them available in your program so that you can easilty start working on the required project.
