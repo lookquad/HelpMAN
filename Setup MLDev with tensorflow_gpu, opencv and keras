@@ -1,0 +1,5 @@
+Install anaconda 
+creare an environment -->  conda create  -n ml python=3.5
+conda install tensorflow-gpu keras-gpu
+conda install nb_conda
+conda install -c conda-forge octave_kernel
